@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Test</title>
-
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Test</title>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container theme-showcase" role="main">
@@ -19,50 +19,25 @@
 			<h1>Nuevo Ingrediente/Condimento</h1>
 			<p></p>
 		</div>
+		
 
 		<div class="page-header">
-			<h1>Buttons</h1>
+			<h1>Dar de Alta un nuevo Ingrediente</h1>
+			<form class="form-horizontal">
+			  <div class="form-group">
+	 			 <label for="nombreIngrediente" class="col-sm-2 control-label">Nombre</label>
+	 			 <div class="col-sm-10">
+	 			 	<input type="text" class="form-control" id="nombreIngrediente"/>
+	 			 </div>
+	 		  </div>
+	 		  <div class="form-group">
+			   	 <label for="precioIngrediente" class="col-sm-2 control-label">Precio</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="precioIngrediente" />
+			    </div>
+			   </div>
+			 </form>
 		</div>
-		<p>
-			<button type="button" class="btn btn-lg btn-default">Default</button>
-			<button type="button" class="btn btn-lg btn-primary">Primary</button>
-			<button type="button" class="btn btn-lg btn-success">Success</button>
-			<button type="button" class="btn btn-lg btn-info">Info</button>
-			<button type="button" class="btn btn-lg btn-warning">Warning</button>
-			<button type="button" class="btn btn-lg btn-danger">Danger</button>
-			<button type="button" class="btn btn-lg btn-link">Link</button>
-		</p>
-		<p>
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">Danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</p>
-		<p>
-			<button type="button" class="btn btn-sm btn-default">Default</button>
-			<button type="button" class="btn btn-sm btn-primary">Primary</button>
-			<button type="button" class="btn btn-sm btn-success">Success</button>
-			<button type="button" class="btn btn-sm btn-info">Info</button>
-			<button type="button" class="btn btn-sm btn-warning">Warning</button>
-			<button type="button" class="btn btn-sm btn-danger">Danger</button>
-			<button type="button" class="btn btn-sm btn-link">Link</button>
-		</p>
-		<p>
-			<button type="button" class="btn btn-xs btn-default">Default</button>
-			<button type="button" class="btn btn-xs btn-primary">Primary</button>
-			<button type="button" class="btn btn-xs btn-success">Success</button>
-			<button type="button" class="btn btn-xs btn-info">Info</button>
-			<button type="button" class="btn btn-xs btn-warning">Warning</button>
-			<button type="button" class="btn btn-xs btn-danger">Danger</button>
-			<button type="button" class="btn btn-xs btn-link">Link</button>
-		</p>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

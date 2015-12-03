@@ -3,10 +3,18 @@ package tallerweb.sangucheto.modelo;
 import java.util.LinkedList;
 import java.util.List;
 
+import tallerweb.sangucheto.modelo.Descuento;
+
 public class Sanguchetto {
+
+	public class Descuento {
+
+	}
 
 	private static Sanguchetto instance = new Sanguchetto();
 	private List<Ingrediente> ingredientes = new LinkedList<Ingrediente>();
+    private List<Descuento> descuentos = new LinkedList<Descuento>();
+
 	
 	private Sanguchetto(){}
 	
@@ -18,7 +26,8 @@ public class Sanguchetto {
 	 * Elimina todos los ingredientes del sanguchetto.<br>
 	 */
 	public void vaciar(){
-		// Implementar
+		ingredientes.remove(instance);
+		
 	}
 	
 	/**

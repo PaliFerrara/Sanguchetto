@@ -22,20 +22,47 @@
 		</div>
 
 		<div class="page-header">
-			<h1>Buttons</h1>
+			<h1>Eleg&iacute; Ingrediente</h1>
 		</div>
 		<div>
-			<label>Eleg&iacute; Ingrediente</label>
+	<!--  		<label>Eleg&iacute; Ingrediente</label>-->
+			<div class="checkbox">
+  				<label><input type="checkbox" value="queso">Queso</label>
+			</div>
+			<div class="checkbox">
+  				<label><input type="checkbox" value="Jamon">Jam&oacute;n</label>
+			</div>
+			<div class="checkbox">
+  				<label><input type="checkbox" value="Tomate">Tomate</label>
+			</div>
+			<div class="checkbox">
+  				<label><input type="checkbox" value="Lechuga">Lechuga</label>
+			</div>
+			<div class="checkbox">
+  				<label><input type="checkbox" value="Mayonesa">Mayonesa</label>
+			</div>
 			<datalist></datalist>
 			<button>Agregar</button>
 		</div>
-		<div>
-			<label>TOTAL</label>
-		</div>
-		<div>
-			<button type="button" class="btn btn-lg btn-success">Confirmar</button>
-			<button type="button" class="btn btn-lg btn-warning">Cancelar</button>
-		</div>
+		 </br>
+		<form class="form-inline">
+		  <div class="form-group">
+		  	<label>TOTAL</label>
+		    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+		    <div class="input-group">
+		      <div class="input-group-addon">$</div>
+		      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+		      <div class="input-group-addon">.00</div>
+		    </div>
+		  </div>
+		  </br>
+		  </br>
+		  <div>
+		  <button type="submit" class="btn btn-lg btn-primary">Confirmar</button>
+		  <button type="button" class="btn btn-lg btn-warning">Cancelar</button>
+		  </div>
+		</form>
+
 
 	</div>
 
