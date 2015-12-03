@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap Test</title>
+	<title>Sanguchetto</title>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -18,7 +18,10 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
 			<h1>Arm&aacute; tu Sanguchetto</h1>
-			<p></p>
+			<span><a class="btn btn-primary btn-lg" href="AltaIngrediente" role="button">Nuevo Ingrediente</a>
+ 			<a class="btn btn-primary btn-lg" href="MostrarStock" role="button">Mostrar Stock</a>
+ 			<a class="btn btn-primary btn-lg" href="AgregarStock" role="button">Agregar Stock</a>
+ 			<a class="btn btn-primary btn-lg" href="EliminarStock" role="button">Eliminar Stock</a></span>
 		</div>
 
 		<div class="page-header">
@@ -44,19 +47,17 @@
 			<datalist></datalist>
 			<button>Agregar</button>
 		</div>
-		 </br>
 		<form class="form-inline">
 		  <div class="form-group">
 		  	<label>TOTAL</label>
-		    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+		    <label class="sr-only" for="exampleInputAmount">Monto</label>
 		    <div class="input-group">
 		      <div class="input-group-addon">$</div>
 		      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
 		      <div class="input-group-addon">.00</div>
 		    </div>
 		  </div>
-		  </br>
-		  </br>
+
 		  <div>
 		  <button type="submit" class="btn btn-lg btn-primary">Confirmar</button>
 		  <button type="button" class="btn btn-lg btn-warning">Cancelar</button>

@@ -17,7 +17,11 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
 			<h1>Eliminar Ingredientes</h1>
-			<p></p>
+			<span><a class="btn btn-primary btn-lg" href="AltaIngrediente" role="button">Nuevo Ingrediente</a>
+ 			<a class="btn btn-primary btn-lg" href="MostrarStock" role="button">Mostrar Stock</a>
+ 			<a class="btn btn-primary btn-lg" href="AgregarStock" role="button">Agregar Stock</a>
+ 			<a class="btn btn-primary btn-lg" href="EliminarStock" role="button">Eliminar Stock</a></span>
+
 		</div>
 
 		<div class="page-header">

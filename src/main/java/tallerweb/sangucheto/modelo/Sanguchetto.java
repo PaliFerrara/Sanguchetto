@@ -3,7 +3,10 @@ package tallerweb.sangucheto.modelo;
 import java.util.LinkedList;
 import java.util.List;
 
+
 import tallerweb.sangucheto.modelo.Descuento;
+import tallerweb.sangucheto.modelo.Ingrediente;
+import tallerweb.sangucheto.modelo.TipoIngrediente;
 
 public class Sanguchetto {
 
@@ -26,7 +29,7 @@ public class Sanguchetto {
 	 * Elimina todos los ingredientes del sanguchetto.<br>
 	 */
 	public void vaciar(){
-		ingredientes.remove(instance);
+		getIngredientes().remove(instance);
 		
 	}
 	
@@ -35,7 +38,7 @@ public class Sanguchetto {
 	 * @param ingrediente
 	 */
 	public void agregarIngrediente(Ingrediente ingrediente){
-		// Implementar
+		this.getIngredientes().add(ingrediente);
 	}
 	
 	/**
@@ -43,25 +46,47 @@ public class Sanguchetto {
 	 * @return
 	 */
 	public List<Ingrediente> verIngredientes(){
-		// Implementar
-		return null;
-	}
+			List<Ingrediente> lista = new LinkedList<Ingrediente>();
+			for(Ingrediente each : this.getIngredientes()) {
+				if (each.getTipo().equals(TipoIngrediente.INGREDIENTE)) {
+					lista.add(each);
+				}
+			}
+			return lista;
+		}
+	
 	
 	/**
      * Lista todos los condimentos que forman parte del sanguchetto.<br>
      * @return
      */
     public List<Ingrediente> verCondimentos(){
-        // Implementar
-        return null;
-    }
+		List<Ingrediente> listaCond = new LinkedList<Ingrediente>();
+		for(Ingrediente each : this.getIngredientes()) {
+			if (each.getTipo().equals(TipoIngrediente.CONDIMENTO)) {
+				listaCond.add(each);
+			}
+		}
+		return listaCond;
+	}
 	
 	/**
 	 * Devuelve el precio total del sanguchetto.<br>
 	 * @return
 	 */
 	public Double getPrecio(){
-		// Implementar
-		return null;
+		Double total = 0.00;
+		for(Ingrediente each : this.getIngredientes()) {
+			total += each.getPrecio();
+		}
+		return total;
+	}
+
+	public List<Ingrediente> getIngredientes() {
+		return ingredientes;
+	}
+
+	public void setIngredientes(List<Ingrediente> ingredientes) {
+		this.ingredientes = ingredientes;
 	}
 }

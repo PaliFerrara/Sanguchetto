@@ -17,7 +17,6 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
 			<h1>Stock de Ingredientes</h1>
-			<p></p>
 		</div>
 
 		<div class="page-header">

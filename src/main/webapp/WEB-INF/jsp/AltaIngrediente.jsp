@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,10 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
 			<h1>Nuevo Ingrediente/Condimento</h1>
-			<p></p>
+			<span><a class="btn btn-primary btn-lg" href="AltaIngrediente" role="button">Nuevo Ingrediente</a>
+ 			<a class="btn btn-primary btn-lg" href="MostrarStock" role="button">Mostrar Stock</a>
+ 			<a class="btn btn-primary btn-lg" href="AgregarStock" role="button">Agregar Stock</a>
+ 			<a class="btn btn-primary btn-lg" href="EliminarStock" role="button">Eliminar Stock</a></span>
 		</div>
 		
 
@@ -36,6 +41,17 @@
 			      <input type="text" class="form-control" id="precioIngrediente" />
 			    </div>
 			   </div>
+			   <div class="form-group">
+			   	 <label for="tipoIngrediente" class="col-sm-2 control-label">Tipo</label>
+				    <div class="col-sm-10">
+					<div class="radio">
+				  		<label><input type="radio" name="optradio">Ingrediente</label>
+					</div>
+					<div class="radio">
+					 	 <label><input type="radio" name="optradio">Condimento</label>
+					</div>			  
+					</div>
+				</div>
 			 </form>
 		</div>
 	</div>
